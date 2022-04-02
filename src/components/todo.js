@@ -20,6 +20,7 @@ const Todo = () => {
 
     const [inputData, setInputData] = useState('');
     const [items, setItems] = useState(getLocalItmes());
+    // used for toggling the text from + to edit.
     const [toggleSubmit, setToggleSubmit] = useState(true);
     const [isEditItem, setIsEditItem] = useState(null);
 
@@ -39,7 +40,7 @@ const Todo = () => {
 
                  setInputData('');
 
-                 setIsEditItem(null);
+                  setIsEditItem(null);
         } else {
             const allInputData = { id: new Date().getTime().toString(), name:inputData }
             setItems([...items, allInputData]);
@@ -106,7 +107,7 @@ const Todo = () => {
                            onChange={(e) => setInputData(e.target.value) }
                         />
                         {
-                            toggleSubmit ? <i className="fa fa-plus add-btn" title="Add Item" onClick={addItem}>+</i> :
+                            toggleSubmit ? <i className="fa fa-plus add-btn" title="Add Item" onEnter={addItem} onClick={addItem}>+</i> :
                                  <i className="far fa-edit add-btn" title="Update Item" onClick={addItem}>update</i>
                         }
                     </div>
