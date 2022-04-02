@@ -1,3 +1,8 @@
+# video explaination part 2
+https://www.youtube.com/watch?v=wLZTaRySN4Y&ab_channel=ThapaTechnical https://www.youtube.com/watch?v=wLZTaRySN4Y&ab_channel=ThapaTechnical
+
+## video explaination part 2
+https://www.youtube.com/watch?v=uTP3ffTx_Xs&ab_channel=ThapaTechnical https://www.youtube.com/watch?v=uTP3ffTx_Xs&ab_channel=ThapaTechnical
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
