@@ -101,15 +101,14 @@ const Todo = () => {
                     </figure>
 
                     <div className="addItems">
-                        <input type="text" placeholder="✍ Add Items..."
+                        <input type="text" placeholder="Add Items..."
                            value={inputData} 
                            onChange={(e) => setInputData(e.target.value) }
                         />
                         {
                             toggleSubmit ? <i className="fa fa-plus add-btn" title="Add Item" onClick={addItem}>+</i> :
-                                 <i className="far fa-edit add-btn" title="Update Item" onClick={addItem}></i>
+                                 <i className="far fa-edit add-btn" title="Update Item" onClick={addItem}>update</i>
                         }
-                       
                     </div>
 
                     <div className="showItems">

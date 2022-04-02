@@ -115,7 +115,7 @@ const Testtodo = () => {
                         />
 
                         {/* toggle the submit btn with the edit btn  */}
-                        { toogleSubmit ? <i className="fa fa-plus add-btn" title="Add item" onClick={() => addItem()}></i> :  <i className="far fa-edit add-btn" title="Edit item" onClick={addItem}></i> }
+                        { toogleSubmit ? <i className="fa fa-plus add-btn" title="Add item" onClick={() => addItem()}>add</i> :  <i className="far fa-edit add-btn" title="Edit item" onClick={addItem}>edit</i> }
                         
                     </div>
 
@@ -126,8 +126,8 @@ const Testtodo = () => {
                                     <div className="eachItem" key={elem.id}>
                                         <h3> {elem.name} </h3>
                                         <div className='todo-btn'>
-                                            <i className="far fa-edit add-btn" title="Edit item" onClick={() => editItem(elem.id)}></i>
-                                            <i className="far fa-trash-alt add-btn" title="Delete item" onClick={() => deleteItem(elem.id)}></i>
+                                            <i className="far fa-edit add-btn" title="Edit item" onClick={() => editItem(elem.id)}>editItem</i>
+                                            <i className="far fa-trash-alt add-btn" title="Delete item" onClick={() => deleteItem(elem.id)}>deleteItem</i>
                                         </div>
                                        
                                     </div>
